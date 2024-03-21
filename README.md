@@ -3,7 +3,7 @@
 
 # Installetion and Update
 ```shell
-curl -LSs "https://raw.githubusercontent.com/ALEX5402/Q-shere/main/setup.sh" | bash -```
+curl -LSs "https://raw.githubusercontent.com/ALEX5402/Q-shere/main/setup.sh" | bash -``
 
 # Usage
 - ``upload -h``
