@@ -139,9 +139,14 @@ show_usage() {
     echo -e "  ${CYAN}-f all${NC}                                Upload all files from the current directory without JSON data"
     echo -e "  ${CYAN}-j all${NC}                                Upload all files from the current directory with JSON data"
     echo -e "  ${RED}-d${NC}                                     Delete all .json and .txt files from the current directory"
+    echo -e "  ${GREEN}-u${NC}                                   To update the script from github"
     echo -e "  Example: ${GREEN}$0 -f jpg png${NC}               Upload all JPG and PNG files from the current directory without JSON data"
     echo -e "  ${GREEN}$0 -j all${NC}                            Upload all files from the current directory with JSON data"
 
+}
+
+updatescript(){
+curl -LSs "https://raw.githubusercontent.com/ALEX5402/Q-shere/main/setup.sh" | bash -
 }
 
 process_files2() {
@@ -194,6 +199,8 @@ elif [[ $1 == "-f" ]]; then
         filetypes=("${@:2}")
         process_files2 "${filetypes[@]}"
     fi
+elif [[ $1 == "-u"  ]]; then
+updatescript
 elif [[ $1 == "-h"  ]]; then
  show_usage
 elif [[ $1 == "-d"  ]]; then
