@@ -8,7 +8,13 @@ curl -LSs "https://raw.githubusercontent.com/ALEX5402/Q-shere/main/setup.sh" | b
 ```
 
 # Usage
-- ```upload -h```
+```shell
+upload -h
+
+```
 
 # Uninstall
-- ```rm ~/.local/bin/upload```
+```shell
+rm ~/.local/bin/upload
+
+```
