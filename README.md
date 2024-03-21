@@ -2,7 +2,7 @@
  A simple script to quickly shere your files via 0.0 st null pointer website with some cool features 
 
 # Dependencys
-- Make shure wget and curl is installed
+ Make shure wget and curl is installed
 
 # Installetion and Update
 ```shell
