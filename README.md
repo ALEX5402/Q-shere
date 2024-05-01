@@ -10,6 +10,26 @@ curl -LSs "https://raw.githubusercontent.com/ALEX5402/Q-shere/main/setup.sh" | b
 
 ```
 
+# Add this to your config.fish file if you use fish shell
+```shell
+# Add ~/.local/bin to PATH
+if test -d ~/.local/bin
+    if not contains -- ~/.local/bin $PATH
+        set -p PATH ~/.local/bin
+    end
+end
+
+```
+
+# Add this to your .bashrc config file if you use bash
+```shell
+# Add ~/.local/bin to PATH
+if [ -d "$HOME/.local/bin" ] && ! echo "$PATH" | grep -q "$HOME/.local/bin"; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
+```
+
 # Usage
 ```shell
 upload -h
