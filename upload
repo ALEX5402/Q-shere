@@ -81,14 +81,16 @@ process_files() {
 
 # Function to display usage information
 show_usage() {
+    script_name=$(basename "$0")
     echo "Usage:"
-    echo "  $0 -f <filetype1> [<filetype2> ...]   Process specific file types"
-    echo "  $0 -j                                 Upload all files from the current directory with JSON data"
-    echo "  $0 -d                                 Delete all .json and .txt files from the current directory"
-    echo "  $0 <filepath>                         Upload a specific file"
-    echo "  $0 -u                                 Update the script"
-    echo "  $0 -h                                 Show this usage information"
+    echo "  $script_name -f <filetype1> [<filetype2> ...]    Process specific file types"
+    echo "  $script_name -j                                 Upload all files from the current directory with JSON data"
+    echo "  $script_name -d                                 Delete all .json and .txt files from the current directory"
+    echo "  $script_name <filepath>                         Upload a specific file"
+    echo "  $script_name -u                                 Update the script"
+    echo "  $script_name -h                                 Show this usage information"
 }
+
 
 # Function to update the script
 updatescript() {
