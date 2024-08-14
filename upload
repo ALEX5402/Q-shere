@@ -83,7 +83,7 @@ process_files() {
 show_usage() {
     script_name=$(basename "$0")
     echo "Usage:"
-    echo "  $script_name -f <filetype1> [<filetype2> ...]    Process specific file types"
+    echo "  $script_name -f <filetype1> [<filetype2> ...]   Process specific file types"
     echo "  $script_name -j                                 Upload all files from the current directory with JSON data"
     echo "  $script_name -d                                 Delete all .json and .txt files from the current directory"
     echo "  $script_name <filepath>                         Upload a specific file"
